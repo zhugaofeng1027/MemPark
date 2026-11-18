@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160" role="img" aria-labelledby="title desc">
+  <title id="title">MemPark: A Unified Memory System for Intelligent Agents</title>
+  <desc id="desc">Planned architecture. A shared memory lifecycle and MemPark Core support structured, multimodal, and self-evolving memory, backed by common infrastructure. Feedback connects memory use to future updates.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#71838a"/>
+    </marker>
+    <marker id="teal-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#13796d"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; letter-spacing: 0; }
+      .ink { fill: #1e3036; }
+      .muted { fill: #63747b; }
+      .section { font-size: 13px; font-weight: 700; }
+      .heading { font-size: 23px; font-weight: 700; }
+      .body { font-size: 16px; }
+      .small { font-size: 14px; }
+      .line { fill: none; stroke: #71838a; stroke-width: 1.7; marker-end: url(#arrow); }
+      .teal-line { fill: none; stroke: #13796d; stroke-width: 1.8; marker-end: url(#teal-arrow); }
+      .node { stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1440" height="1160" fill="#ffffff"/>
+
+  <!-- Project identity. -->
+  <text x="60" y="75" font-size="52" font-weight="750" fill="#13796d">MemPark</text>
+  <text x="322" y="72" font-size="25" font-weight="600" class="ink">A Unified Memory System for Intelligent Agents</text>
+  <text x="62" y="106" class="body muted">Structured memory. Multimodal evidence. Continuous evolution.</text>
+  <path d="M60 128 H1380" stroke="#dce4e7"/>
+
+  <!-- Shared lifecycle. -->
+  <text x="60" y="165" class="section muted">01 / MEMORY LIFECYCLE</text>
+  <text x="1380" y="165" text-anchor="end" class="small muted">Conversations / Documents / Tools / Media</text>
+
+  <g>
+    <rect x="60" y="188" width="236" height="104" rx="8" fill="#f7f9fa" stroke="#dce4e7"/>
+    <text x="80" y="215" class="small muted">INPUT</text>
+    <text x="80" y="246" class="heading ink">Observe</text>
+    <text x="80" y="272" class="small muted">Capture context and sources</text>
+
+    <rect x="331" y="188" width="236" height="104" rx="8" fill="#f7f9fa" stroke="#dce4e7"/>
+    <text x="351" y="215" class="small muted">CONSTRUCTION</text>
+    <text x="351" y="246" class="heading ink">Encode</text>
+    <text x="351" y="272" class="small muted">Filter, extract, represent</text>
+
+    <rect x="602" y="188" width="236" height="104" rx="8" fill="#f7f9fa" stroke="#dce4e7"/>
+    <text x="622" y="215" class="small muted">ORGANIZATION</text>
+    <text x="622" y="246" class="heading ink">Organize</text>
+    <text x="622" y="272" class="small muted">Link, index, consolidate</text>
+
+    <rect x="873" y="188" width="236" height="104" rx="8" fill="#f7f9fa" stroke="#dce4e7"/>
+    <text x="893" y="215" class="small muted">MEMORY USE</text>
+    <text x="893" y="246" font-size="22" font-weight="700" class="ink">Retrieve &amp; Reason</text>
+    <text x="893" y="272" class="small muted">Recall task-relevant evidence</text>
+
+    <rect x="1144" y="188" width="236" height="104" rx="8" fill="#f0f8f5" stroke="#b2d7ca"/>
+    <text x="1164" y="215" class="small" fill="#13796d">FEEDBACK</text>
+    <text x="1164" y="246" font-size="22" font-weight="700" class="ink">Reflect &amp; Evolve</text>
+    <text x="1164" y="272" class="small muted">Revise memories and policies</text>
+  </g>
+  <path d="M296 240 H326" class="line"/>
+  <path d="M567 240 H597" class="line"/>
+  <path d="M838 240 H868" class="line"/>
+  <path d="M1109 240 H1139" class="line"/>
+  <path d="M1262 292 V318 H178 V295" class="teal-line" stroke-dasharray="6 5"/>
+  <rect x="578" y="306" width="284" height="24" fill="#ffffff"/>
+  <text x="720" y="322" text-anchor="middle" class="small" fill="#13796d">Continuous interaction and feedback</text>
+  <path d="M720 334 V363" class="teal-line"/>
+
+  <!-- Shared runtime, not three independent memory systems. -->
+  <rect x="60" y="370" width="1320" height="148" rx="8" fill="#edf7f4" stroke="#13796d" stroke-width="1.5"/>
+  <rect x="60" y="370" width="9" height="148" rx="4" fill="#13796d"/>
+  <text x="92" y="404" class="section" fill="#13796d">02 / SHARED FOUNDATION</text>
+  <text x="92" y="449" font-size="36" font-weight="700" fill="#13796d">MemPark Core</text>
+  <text x="92" y="482" class="body ink">Unified representation and memory orchestration</text>
+  <path d="M576 402 V486" stroke="#b2d7ca"/>
+  <text x="610" y="424" class="body ink">Memory objects &amp; provenance</text>
+  <text x="610" y="459" class="body ink">Lifecycle &amp; read / write policies</text>
+  <text x="1000" y="424" class="body ink">Retrieval &amp; capability routing</text>
+  <text x="1000" y="459" class="body ink">Versions &amp; feedback tracking</text>
+  <text x="610" y="491" class="small muted">One shared core; complementary research directions.</text>
+
+  <path d="M720 518 V548 H270 V588" class="line"/>
+  <path d="M720 548 V588" class="line"/>
+  <path d="M720 548 H1170 V588" class="line"/>
+  <text x="60" y="570" class="section muted">03 / MEMORY CAPABILITIES</text>
+
+  <!-- Structured memory. -->
+  <rect x="60" y="600" width="420" height="300" rx="8" fill="#f7fbf8" stroke="#99c7ad" stroke-width="1.5"/>
+  <rect x="60" y="600" width="420" height="5" rx="2" fill="#16805b"/>
+  <text x="84" y="639" class="section" fill="#16805b">STRUCTURED</text>
+  <text x="84" y="674" class="heading ink">Structured Memory</text>
+  <text x="84" y="701" class="body muted">From fragments to connected knowledge</text>
+  <g stroke="#16805b" fill="none" stroke-width="2">
+    <path d="M270 739 V753 M270 753 H170 V771 M270 753 H370 V771 M270 753 V771"/>
+    <path d="M170 789 V802 H133 V818 M170 802 H207 V818"/>
+    <path d="M270 789 V818 M370 789 V802 H333 V818 M370 802 H407 V818"/>
+    <rect x="231" y="718" width="78" height="22" rx="3" fill="#e1f0e7"/>
+    <rect x="145" y="771" width="50" height="18" rx="3" fill="#e1f0e7"/>
+    <rect x="245" y="771" width="50" height="18" rx="3" fill="#e1f0e7"/>
+    <rect x="345" y="771" width="50" height="18" rx="3" fill="#e1f0e7"/>
+    <circle cx="133" cy="824" r="6" fill="#ffffff"/>
+    <circle cx="207" cy="824" r="6" fill="#ffffff"/>
+    <circle cx="270" cy="824" r="6" fill="#ffffff"/>
+    <circle cx="333" cy="824" r="6" fill="#ffffff"/>
+    <circle cx="407" cy="824" r="6" fill="#ffffff"/>
+  </g>
+  <text x="84" y="864" class="small" fill="#16805b">Entities / Events / Hierarchies / Relations</text>
+  <text x="84" y="885" class="small muted">Temporal reasoning and traceable retrieval</text>
+
+  <!-- Multimodal evidence bound to a common event. -->
+  <rect x="510" y="600" width="420" height="300" rx="8" fill="#f6f9fd" stroke="#a9c4e4" stroke-width="1.5"/>
+  <rect x="510" y="600" width="420" height="5" rx="2" fill="#286ab5"/>
+  <text x="534" y="639" class="section" fill="#286ab5">MULTIMODAL</text>
+  <text x="534" y="674" class="heading ink">Multimodal Memory</text>
+  <text x="534" y="701" class="body muted">Shared events, complementary evidence</text>
+  <g stroke="#286ab5" stroke-width="1.8" fill="none">
+    <path d="M685 773 H620 M755 773 H820 M720 755 V741 M720 793 V812"/>
+    <rect x="682" y="755" width="76" height="38" rx="5" fill="#e5eef9"/>
+    <rect x="555" y="756" width="65" height="34" rx="4" fill="#ffffff"/>
+    <rect x="820" y="756" width="66" height="34" rx="4" fill="#ffffff"/>
+    <rect x="687" y="714" width="66" height="28" rx="4" fill="#ffffff"/>
+    <rect x="687" y="812" width="66" height="28" rx="4" fill="#ffffff"/>
+  </g>
+  <text x="720" y="779" text-anchor="middle" class="small" fill="#286ab5">Event</text>
+  <text x="587" y="778" text-anchor="middle" class="small" fill="#286ab5">Image</text>
+  <text x="853" y="778" text-anchor="middle" class="small" fill="#286ab5">Audio</text>
+  <text x="720" y="733" text-anchor="middle" class="small" fill="#286ab5">Text</text>
+  <text x="720" y="832" text-anchor="middle" class="small" fill="#286ab5">Video</text>
+  <text x="534" y="864" class="small" fill="#286ab5">Alignment / Cross-modal Retrieval / Evidence</text>
+  <text x="534" y="885" class="small muted">Long-horizon understanding across modalities</text>
+
+  <!-- Evolution of both memory content and policies. -->
+  <rect x="960" y="600" width="420" height="300" rx="8" fill="#fff9f7" stroke="#dfb4a8" stroke-width="1.5"/>
+  <rect x="960" y="600" width="420" height="5" rx="2" fill="#c35b40"/>
+  <text x="984" y="639" class="section" fill="#c35b40">SELF-EVOLVING</text>
+  <text x="984" y="674" class="heading ink">Self-Evolving Memory</text>
+  <text x="984" y="701" class="body muted">Improve with experience and feedback</text>
+  <g stroke-width="2">
+    <g stroke="#d5b6ad" fill="#ffffff">
+      <path d="M1025 757 L1080 735 L1107 792 L1035 820 Z M1025 757 L1107 792" fill="none"/>
+      <circle cx="1025" cy="757" r="6"/>
+      <circle cx="1080" cy="735" r="6"/>
+      <circle cx="1107" cy="792" r="6"/>
+      <circle cx="1035" cy="820" r="6"/>
+    </g>
+    <path d="M1130 775 H1181" class="line"/>
+    <g stroke="#c35b40" fill="#fff0e9">
+      <path d="M1210 758 L1265 728 L1325 758 L1300 819 L1234 819 Z M1210 758 L1300 819 M1265 728 L1234 819 M1210 758 L1325 758 M1265 728 L1300 819" fill="none"/>
+      <circle cx="1210" cy="758" r="6"/>
+      <circle cx="1265" cy="728" r="6"/>
+      <circle cx="1325" cy="758" r="6"/>
+      <circle cx="1300" cy="819" r="6"/>
+      <circle cx="1234" cy="819" r="6"/>
+    </g>
+  </g>
+  <text x="984" y="864" class="small" fill="#c35b40">Consolidation / Revision / Forgetting / Reflection</text>
+  <text x="984" y="885" class="small muted">Evolve memory content, structure and policies</text>
+
+  <!-- Common infrastructure. -->
+  <path d="M270 900 V927 H1170 V903" class="line" marker-start="url(#arrow)"/>
+  <path d="M720 927 V963" class="line"/>
+  <text x="60" y="950" class="section muted">04 / BACKENDS &amp; INFRASTRUCTURE</text>
+  <path d="M60 971 H1380" stroke="#dce4e7"/>
+  <g class="ink">
+    <text x="76" y="1006" font-size="17" font-weight="650">Models &amp; Encoders</text>
+    <text x="76" y="1035" class="small muted">LLMs / VLMs / Embeddings</text>
+    <text x="76" y="1057" class="small muted">Perception and representation</text>
+
+    <text x="410" y="1006" font-size="17" font-weight="650">Storage &amp; Indexes</text>
+    <text x="410" y="1035" class="small muted">Vector / Graph / Document / Media</text>
+    <text x="410" y="1057" class="small muted">Persistence and retrieval</text>
+
+    <text x="745" y="1006" font-size="17" font-weight="650">Agent Interfaces</text>
+    <text x="745" y="1035" class="small muted">SDK / API / MCP</text>
+    <text x="745" y="1057" class="small muted">Application and tool access</text>
+
+    <text x="1080" y="1006" font-size="17" font-weight="650">Evaluation &amp; Tracing</text>
+    <text x="1080" y="1035" class="small muted">Tasks / Quality / Cost / Feedback</text>
+    <text x="1080" y="1057" class="small muted">Reproducibility and observability</text>
+  </g>
+  <path d="M382 990 V1065 M717 990 V1065 M1052 990 V1065" stroke="#dce4e7"/>
+  <path d="M60 1090 H1380" stroke="#dce4e7"/>
+  <text x="60" y="1126" class="small muted">MemPark / Architecture Overview</text>
+  <text x="1380" y="1126" text-anchor="end" class="small muted">Planned architecture. Research methods and papers to be added.</text>
+</svg>
